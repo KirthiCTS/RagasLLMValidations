@@ -8,7 +8,9 @@ from ragas.metrics import LLMContextPrecisionWithoutReference, context_precision
 
 @pytest.mark.asyncio
 async def test_context_precision():
-   #OPENAIK
+    os.environ[
+        "OPENAI_API_KEY"] = "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"
+
     llm = ChatOpenAI(model = "gpt-4.1", temperature = 0)
     langchain_llm = LangchainLLMWrapper(llm)
     context_precision = LLMContextPrecisionWithoutReference(llm = langchain_llm)
