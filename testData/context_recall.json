@@ -1,0 +1,9 @@
+  [{
+    "question": "How many articles are available in selenium webdriver java",
+    "reference": "There are 23 articles in this course"
+  },
+    {
+    "question": "What are the requirements for the course",
+    "reference": "The course requires basic knowledge in python and programming"
+  }
+  ]
